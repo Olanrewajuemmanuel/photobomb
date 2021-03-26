@@ -12,9 +12,16 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   module: {
-    rules: [{ test: /\.jsx?/, use: "babel-loader", exclude: "/node_modules/" },
-            {test: /\.s?css/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']}
-  ],
+    rules: [
+      { test: /\.jsx?/, use: "babel-loader", exclude: "/node_modules/" },
+      {
+        test: /\.s?css/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(jpe?g|svg|png)$/i, type: 'asset/resource' 
+      }
+    ],
   },
   resolve: {
     extensions: [".jsx", ".js"],
@@ -25,7 +32,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({template: './src/template.html', filename: './public/index.html'}),
-    new MiniCssExtractPlugin()
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+      filename: "./public/index.html",
+    }),
+    new MiniCssExtractPlugin(),
   ],
 };
