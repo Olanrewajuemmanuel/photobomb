@@ -1,0 +1,17 @@
+@use './styles/global.scss';
+
+
+
+h1, h2, h3, h4, p, li, a {
+    font-family: global.$font;
+    color: global.$primary;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+@import './styles/navbar';
+@import './styles/body';

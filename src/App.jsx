@@ -1,15 +1,23 @@
-import './styles.css'
-import img from './assets/fallback.png'
+import './styles.scss'
 import { useState } from 'react';
 
+import Navbar from './components/Navbar'
+import Body from './components/Body'
+
 function App() {
-    const [click, setClick] = useState(0)
+    const categories = [
+        {name: 'Oil-painting', id: '001'},
+        {name: 'Music', id: '002'},
+        {name: 'Carving', id: '003'},
+        {name: 'Gigs', id: '004'},
+        {name: 'Photography', id: '005'},
+        {name: 'Modelling', id: '006'},
+    ]    
     return (
-        <div>
-            <h1>Hello from React</h1>
-            <img src={img} alt="image" />
-            <button onClick={() => setClick(click+1)}>{click}</button>
-        </div>
+        <>
+            <Navbar />
+            <Body categories={categories}/>
+        </>
     )
 }
 

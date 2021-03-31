@@ -1,0 +1,65 @@
+@use './global.scss';
+
+.photobomb__navbar {
+    width: 100%;
+    height: 10vh;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        text-decoration: none;
+        &>p {
+            color: global.$secondary;
+        }
+    }
+    .nav__items {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+            list-style-type: none;
+            margin: 0 2em;
+            a {
+                text-decoration: none;
+                &>p {
+                    color: global.$primary;
+                }
+            }
+            input[type='text'] {
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                outline: none;
+                background-color: rgb(240, 236, 236);
+                border: none;
+                width: 80%;
+                padding: 1.0em;
+            }
+        }
+    }
+    .button-grp {
+        padding: 0;
+        &>* {
+            margin: 0 .5em;
+            outline: 0;
+            border: 0;
+            border-radius: 50px;
+            padding: .5em;
+            width: 100px;
+            height: 30px;
+            color: white;
+            font-weight: bold;
+            
+        }
+        .login {
+            background-color: global.$background_2;
+        }
+        .signup {
+            background-color: global.$secondary;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
