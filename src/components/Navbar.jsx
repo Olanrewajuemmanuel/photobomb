@@ -9,10 +9,10 @@ function Navbar() {
         </a>
         <ul className="nav__items">
           <li>
-            <a href="#">Find work</a>
+            <a href="#">find work</a>
           </li>
           <li>
-            <a href="#">Find Artists</a>
+            <a href="#">find Artists</a>
           </li>
           <li>
             <form>

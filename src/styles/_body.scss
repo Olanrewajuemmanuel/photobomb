@@ -14,11 +14,13 @@
             align-items: center;
             li {
                 list-style: none;
-                background-color: global.$background_2;
                 cursor: pointer;
                 color: white;
-                padding: 1.0em;
+                font-style: normal;
+                padding: .8em;
                 border-radius: 50px;
+                background: linear-gradient(to bottom right, #fff,  global.$background_2);
+                border: none;
             }
         }
     }

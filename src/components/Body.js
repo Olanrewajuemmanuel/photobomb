@@ -15,7 +15,7 @@ function Body({ categories }) {
         </div>
       </div>
       <div className="photobomb__header">
-        <h1>Finding and Celebrating African Arts</h1>
+        <h1>Searching and Celebrating African Arts</h1>
       </div>
     </div>
   );
