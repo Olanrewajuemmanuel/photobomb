@@ -1,7 +1,7 @@
 # Photobomb
 
-[stars](https://github.com/Olanrewajuemmanuel/photobomb/stargazers)
-<big>A Place to search for and celebrate African Arts
+[Github stars](https://github.com/Olanrewajuemmanuel/photobomb/stargazers)
+<big>A Place to search for and celebrate African Arts.
 Africa is bustling with a lot of talent and creativity and it will be nice to have a medium for expression</big>
 
 <hr />
@@ -41,7 +41,7 @@ $ cd Project && py manage.py runserver
 <p>It is important for you to build the frontend before running, to do so navigate to the frontend/ directory and run
 
 ```js
-yarn build
+$ yarn build
 ```
 
 ```py
@@ -59,6 +59,7 @@ Raise issues and fork also, thanks
 
 # Author
 
-<p>My humble self, Lanre</p> [Mail](olalerulanre@gmail.com)
+<p>My humble self, Lanre. olalerulanre@gmail.com .
+</p> 
 
 <small>With love from NG</small>
