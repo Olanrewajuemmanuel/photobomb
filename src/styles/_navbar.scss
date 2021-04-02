@@ -47,16 +47,22 @@ nav {
             border-radius: 50px;
             padding: .7em;
             width: 100px;
-            height: 30px;
+            height: 40px;
             color: white;
             font-weight: bold;
             
         }
         .login {
-            background-color: global.$background_2;
+            background-color: rgb(13, 13, 94);
+            &:hover {
+                cursor: pointer;
+            }
         }
         .signup {
-            background-color: global.$secondary;
+            background-color: rgb(88, 16, 16);
+            &:hover {
+                cursor: pointer;
+            }
         }
         &:hover {
             cursor: pointer;

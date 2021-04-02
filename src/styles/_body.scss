@@ -1,36 +1,42 @@
 @use './global.scss';
 
-.photobomb-body {
-    height: 100%;
-}
+@media only screen and (min-width: 1024px) {
+    .photobomb-body {
+        height: 100%;
+    }
 
-.photobomb__categ {
+    .photobomb__categ {
 
-    .carousel-slide {
+        .carousel-slide {
 
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li {
-                list-style: none;
-                cursor: pointer;
-                color: white;
-                font-style: normal;
-                padding: .8em;
-                border-radius: 50px;
-                background: linear-gradient(to bottom right, #fff,  global.$background_2);
-                border: none;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    cursor: pointer;
+                    color: white;
+                    font-style: normal;
+                    padding: .8em;
+                    border-radius: 50px;
+                    background: linear-gradient(to bottom right, #fff, global.$background_2);
+                    border: none;
+                    box-shadow: 5px 4px 0 #eee;
+                }
             }
         }
     }
-}
-.photobomb__header {
-    text-align: center;
-    padding: 2.5em;
-    display: flex;
-    justify-content: center;
-    h1 {
-        width: 30%;
+
+    .photobomb__header {
+        text-align: center;
+        padding: 2.5em;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            width: 30%;
+        }
     }
 }
