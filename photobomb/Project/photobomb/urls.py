@@ -7,5 +7,5 @@ from django.conf import settings
 app_name = 'photobomb'
 
 urlpatterns = [
-    path("", views.index, name="Home")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("", views.index, name="Home"),
+]

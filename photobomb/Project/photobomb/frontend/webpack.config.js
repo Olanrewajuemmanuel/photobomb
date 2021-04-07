@@ -58,15 +58,11 @@ module.exports = {
   resolve: {
     extensions: [".jsx", ".js"],
   },
-  devServer: {
-    contentBase: path.join(__dirname, "/public"),
-    hot: true,
-  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/template.html",
-      filename: "./public/index.html",
+      filename: "index.html",
     }),
     new MiniCssExtractPlugin(),
   ],
