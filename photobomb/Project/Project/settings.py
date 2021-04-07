@@ -26,12 +26,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'photobomb.apps',
+    'photobomb',
     'rest_framework',
     'rest_framework.authtoken',  # for token authentication
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -114,3 +115,10 @@ STATICFILES_DIRS = [
 
 STATIC_URL = 'photobomb/frontend/dist/' # find static files in dist/ of frontend
 STATIC_ROOT = BASE_DIR / 'photobomb/static/'
+
+# white-listed ports
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8000',
+    'http://localhost:8000/photobomb',
+
+]
